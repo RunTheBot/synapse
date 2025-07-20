@@ -1,5 +1,7 @@
-.vscode/*
+.vscode/
 *.pyc
 *.pyo
 *.pyd
-**/__pycache__/*
+**/__pycache__/
+**/dist/
+**/*egg-info/
