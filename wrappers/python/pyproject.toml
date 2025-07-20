@@ -1,0 +1,37 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synapse"  # Package name for pip install
+version = "0.1.0"       # Current version of your package
+authors = [
+  { name="RunTheBot", email="contact@runthebot.me" },
+]
+description = "A Python library to control Raspberry Pi Pico GPIO via USB serial."
+readme = "../../README.md" # Assuming README.md is in the root directory alongside pyproject.toml
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License", # Changed to Apache License
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha", 
+    "Topic :: Scientific/Engineering :: Microcontrollers",
+    "Topic :: Software Development :: Embedded Systems",
+]
+keywords = ["raspberry pi pico", "gpio", "usb", "serial", "microcontroller", "arduino", "synapse"] # Added "synapse" keyword
+
+dependencies = [
+    "pyserial>=3.5",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RunTheBot/synapse" 
+"Bug Tracker" = "https://github.com/RunTheBot/synapse/issues"
+"Source Code" = "https://github.com/RunTheBot/synapse"
+
+[tool.setuptools.packages.find]
+where = ["."] # Search for packages in the current directory
+include = ["synapse*"] # This should match your package folder name: synapse/
