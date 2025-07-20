@@ -1,7 +1,0 @@
-.vscode
-*/dist/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-**/__pycache__/
